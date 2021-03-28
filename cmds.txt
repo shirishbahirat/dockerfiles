@@ -10,3 +10,4 @@
   docker image ls -a
   docker builder prune -a
   docker run -it shirishb/python-ai
+  docker system prune -a
