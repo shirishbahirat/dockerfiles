@@ -1,0 +1,12 @@
+  docker build -t python-ai .
+  docker image rm python-ai
+  docker login
+  docker tag python-ai:latest shirishb/python-ai:latest
+  docker push shirishb/python-ai:latest
+  docker container ls -a
+  docker container rm dazzling_swirles
+  docker image ls -a
+  docker image rm 8291
+  docker image ls -a
+  docker builder prune -a
+  docker run -it shirishb/python-ai
